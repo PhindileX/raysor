@@ -1,11 +1,4 @@
-{% load bootstrap4%}
-
-<form action="/url/to/submit/" method="post" class="index">
-  {% csrf_token %}
-  {% bootstrap_form form %}
-  {% buttons %}
-    <button type="submit" class="btn btn-primary">
-      Submit
-    </button>
-  {% endbuttons %}
-</form>
+{% extends 'base.html' %}
+{% block content %}
+  Hello from index...
+{% endblock  %}

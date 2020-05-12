@@ -1,0 +1,8 @@
+{% load bootstrap4%}
+
+<form action="index.html" method="post" class="form">
+    {% csrf_token %}
+    {% bootsrap_form form%}
+    {%buttons%}
+    {%endbuttons%}
+</form>
